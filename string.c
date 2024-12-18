@@ -319,6 +319,7 @@ void str_toupper(string *str)
     foreach_strp(str, c) if (*c >= 'a' && *c <= 'z') *c -= ('a' - 'A');
 }
 
+// an ugly one but it seems to work
 array *str_split(string *str, const char *delim)
 {
     size_t len;
